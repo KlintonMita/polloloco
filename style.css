@@ -1,0 +1,373 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.screenRestart {
+  display: none;
+}
+
+.screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 999;
+  background-image: url("./img/9_intro_outro_screens/start/startscreen_1.png");
+  width: 720px;
+  height: 480px;
+  background-size: cover;
+  background-repeat: round;
+}
+
+.screen.rotate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 999;
+  background-image: url("./img/9_intro_outro_screens/start/startscreen_1.png");
+  width: 720px;
+  height: 480px;
+  background-size: contain;
+  background-repeat: round;
+}
+
+#gameOverScreen {
+  position: absolute;
+  background-image: url(./img/9_intro_outro_screens/game_over/you\ lost.png);
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  z-index: 2;
+  display: none;
+  justify-content: center;
+  align-items: end;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #e9e5e5;
+}
+
+.muteButton {
+  background-image: url("./ico/sound.png");
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+}
+
+.gameOverButtons {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.gameOverButtons button2 {
+  background-color: #eac100;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 36px;
+  font-family: "zabars", Arial, Helvetica, sans-serif;
+  animation: heartbeat 1.5s infinite;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./img/background img/back.jpg");
+  background-size: cover;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  font-family: "org", Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+}
+
+#rotate-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 999;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#rotate-screen p {
+  font-size: 35px;
+  color: #333333;
+}
+
+.button-selector {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+#fix-buttons {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  align-items: center;
+  gap: 20px;
+  z-index: 1;
+}
+
+.fullscreenButton {
+  background-image: url("./ico/full-screen.png");
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+}
+
+.arrowSelector {
+  background-image: url("./ico/game-controller.png");
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "org";
+  src: url("font/orangeFont.ttf") format("truetype");
+}
+
+#startButton {
+  cursor: pointer;
+  height: 30px;
+  border-radius: 15%;
+  border: none;
+  width: 100px;
+  margin-top: 45%;
+  background: unset;
+}
+
+.screenFixer {
+  display: flex;
+}
+
+#panel {
+  position: absolute;
+  z-index: 1;
+  margin-top: 420px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 480px;
+  margin-left: 35px;
+}
+
+.contentCanvas {
+  width: 720px;
+  height: 480px;
+}
+
+button {
+  width: 30px;
+  height: 30px;
+}
+
+.leftArrow {
+  background-image: url("./ico/arrow.png");
+  object-position: center;
+  object-fit: contain;
+  background-position: center;
+  background-size: contain;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-color: yellow;
+}
+
+.rightArrow {
+  background-image: url("./ico/right-arrow.png");
+  object-position: center;
+  object-fit: contain;
+  background-position: center;
+  background-size: contain;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-color: yellow;
+}
+
+.jumpArrow {
+  background-image: url("./ico/up-arrow.png");
+  object-position: center;
+  object-fit: contain;
+  background-position: center;
+  background-size: contain;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-color: yellow;
+}
+
+.shoot {
+  background-image: url("./ico/riot.png");
+  object-position: center;
+  object-fit: contain;
+  background-position: center;
+  background-size: contain;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-color: yellow;
+}
+
+.poloText {
+  position: absolute;
+  top: 0;
+  margin-top: 30px;
+  font-size: 45px;
+}
+
+@media (max-width: 900px) {
+  canvas {
+    width: 100%;
+  }
+
+  #gameOverScreen {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #e9e5e5;
+  }
+
+  .screen {
+    width: 80%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #gameOverScreen {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #e9e5e5;
+  }
+
+  .screen {
+    width: 80%;
+    background-repeat: no-repeat;
+  }
+
+  #panel {
+    margin-top: 320px;
+    gap: 280px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 932px) and (orientation: landscape) {
+  #rotate-screen {
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+
+  .contentCanvas {
+    width: 100%;
+    height: 100%;
+  }
+
+  #canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  #panel {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: end;
+    margin-left: 0;
+  }
+
+  #fullscreenContainer {
+    display: contents;
+  }
+
+  .fullscreenButton {
+    display: none;
+  }
+
+  .arrowSelector {
+    display: none;
+  }
+
+  .screen {
+    width: 100%;
+    height: 100%;
+  }
+  #startButton {
+    margin-top: 30%;
+  }
+
+  .panelWrapper {
+    gap: 15px;
+    display: flex;
+  }
+
+  .leftpannel {
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  .rightpannel {
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+}

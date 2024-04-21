@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poco Loco</title>
+    <link
+      rel="icon"
+      href="./img/2_character_pepe/1_idle/idle/I-1.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/models/drawable-object.class.js"></script>
+    <script src="js/models/movable-object.class.js"></script>
+    <script src="js/models/character.class.js"></script>
+    <script src="js/models/chicken.class.js"></script>
+    <script src="js/models/chicken-small.class.js"></script>
+    <script src="js/models/bottle.class.js"></script>
+    <script src="js/models/coins.class.js"></script>
+    <script src="js/models/cloud.class.js"></script>
+
+    <script src="js/models/status-bar.class.js"></script>
+    <script src="js/models/status-bar-bottle.class.js"></script>
+    <script src="js/models/status-bar-coins.class.js"></script>
+    <script src="js/models/status-bar-endboss.class.js"></script>
+    <script src="js/models/world.class.js"></script>
+    <script src="js/models/background-object.class.js"></script>
+
+    <script src="js/models/keyboard.class.js"></script>
+    <script src="js/models/level.class.js"></script>
+    <script src="js/models/throwable-object.class.js"></script>
+    <script src="js/models/endboss.class.js"></script>
+    <script src="js/levels/level1.js"></script>
+    <script src="js/game.js"></script>
+  </head>
+  <body>
+    <h1 class="poloText">El Pollo Loco</h1>
+    <div class="screenFixer">
+      <div id="start-screen" class="screen">
+        <button id="startButton" class="startButton" onclick="startGame()">
+          <img src="./ico/play.gif" />
+        </button>
+      </div>
+      <div id="rotate-screen" class="screen.rotate hidden">
+        <p>Please rotate the device to continue playing.</p>
+      </div>
+    </div>
+    <div id="fullscreenContainer" class="hidden">
+      <div id="gameOverScreen">
+        <div class="gameOverButtons">
+          <button2 id="restartButton">RESTART</button2>
+        </div>
+      </div>
+      <div class="contentCanvas" id="contentCanvas">
+        <div class="button-selector">
+          <div id="fix-buttons">
+            <button id="arrowSelector" class="arrowSelector"></button>
+            <button id="muteButton" class="muteButton"></button>
+            <button id="fullscreenButton" class="fullscreenButton"></button>
+          </div>
+        </div>
+        <div id="panel">
+          <div class="panelWrapper leftpannel">
+            <button id="leftArrow" class="leftArrow"></button>
+            <button id="rightArrow" class="rightArrow"></button>
+          </div>
+          <div class="panelWrapper rightpannel">
+            <button id="jumpArrow" class="jumpArrow"></button>
+            <button id="shoot" class="shoot"></button>
+          </div>
+        </div>
+        <canvas id="canvas" width="720" height="480"> </canvas>
+      </div>
+    </div>
+  </body>
+</html>
